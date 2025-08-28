@@ -1,0 +1,30 @@
+{
+    'name': 'Legal Practice Management - POA',
+    'version': '1.0.0',
+    'summary': 'Power of Attorney permissions/authorities management on partners (clients).',
+    'description': 'Adds global, reusable POA permissions and allows assigning them to partners via a dedicated tab with checkboxes.',
+    'author': 'Mohamed Essam',
+    'website': 'https://essamsalem.com',
+    'category': 'Contacts',
+    'depends': ['base', 'contacts', 'legal_practice_management'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/poa_permission_views.xml',
+        'views/res_partner_poa_view.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+    'images': [],
+    'demo': [],
+    'test': [],
+    'css': [],
+    'js': [],
+    'qweb': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+    'sequence': 1,
+}
+
+

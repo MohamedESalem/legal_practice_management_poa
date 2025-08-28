@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo\n"
+"POT-Creation-Date: 2025-08-28 00:00+0000\n"
+"PO-Revision-Date: 2025-08-28 00:00+0000\n"
+"Last-Translator: Mohamed Essam <info@essamsalem.com>\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: legal_practice_management_poa
+#: model:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "POA Permissions"
+msgstr "صلاحيات التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "POA Permission"
+msgstr "صلاحية توكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.actions.act_window,name:legal_practice_management_poa.action_poa_permission
+msgid "POA Permissions"
+msgstr "صلاحيات التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_root
+msgid "POA"
+msgstr "التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_permissions
+msgid "POA Permissions"
+msgstr "صلاحيات التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__name_en
+msgid "Permission (EN)"
+msgstr "الصلاحية (إنجليزي)"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__name_ar
+msgid "Permission (AR)"
+msgstr "الصلاحية (عربي)"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__partner_ids
+msgid "Clients"
+msgstr "العملاء"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_res_partner__poa_permission_ids
+msgid "POA Permissions / Authorities"
+msgstr "صلاحيات / سلطات التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,help:legal_practice_management_poa.field_res_partner__poa_permission_ids
+msgid "Select the authorities this client is authorized for."
+msgstr "حدد السلطات المخول بها هذا العميل."
+
+#. module: legal_practice_management_poa
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
+msgid "POA Permissions / Authorities"
+msgstr "صلاحيات / سلطات التوكيل"
+
+
