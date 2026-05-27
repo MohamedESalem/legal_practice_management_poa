@@ -8,6 +8,12 @@
             <xpath expr="//notebook" position="inside">
                 <page string="POA Permissions / Authorities" name="poa_permissions">
                     <group>
+                        <button
+                            name="action_open_poa_download_wizard"
+                            type="object"
+                            string="Download POA"
+                            class="btn-primary"
+                        />
                         <field name="poa_permission_ids" widget="many2many_checkboxes" options="{'no_create_edit': False, 'no_create': False}"/>
                     </group>
                 </page>

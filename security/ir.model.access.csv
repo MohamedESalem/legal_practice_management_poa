@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_poa_permission_user,access.poa.permission.user,model_poa_permission,base.group_user,1,1,1,1
+access_legal_poa_download_wizard_user,access.legal.poa.download.wizard.user,model_legal_poa_download_wizard,base.group_user,1,1,1,1
 
 

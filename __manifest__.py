@@ -6,10 +6,11 @@
     'author': 'Mohamed Essam',
     'website': 'https://essamsalem.com',
     'category': 'Contacts',
-    'depends': ['base', 'contacts', 'legal_practice_management'],
+    'depends': ['base', 'contacts', 'legal_practice_management', 'alnas_docx'],
     'data': [
         'security/ir.model.access.csv',
         'views/poa_permission_views.xml',
+        'views/poa_download_wizard_view.xml',
         'views/res_partner_poa_view.xml',
     ],
     'installable': True,

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_legal_poa_download_wizard_form" model="ir.ui.view">
+        <field name="name">legal.poa.download.wizard.form</field>
+        <field name="model">legal.poa.download.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Download POA">
+                <group>
+                    <field name="partner_id"/>
+                    <field
+                        name="poa_template_id"
+                        options="{'no_create': True, 'no_create_edit': True, 'no_quick_create': True}"
+                    />
+                </group>
+                <footer>
+                    <button
+                        name="action_download_poa"
+                        type="object"
+                        string="Download POA"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_legal_poa_download_wizard" model="ir.actions.act_window">
+        <field name="name">Download POA</field>
+        <field name="res_model">legal.poa.download.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="legal_practice_management_poa.view_legal_poa_download_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
