@@ -3,7 +3,7 @@
     <record id="view_partner_form_inherit_poa" model="ir.ui.view">
         <field name="name">res.partner.form.inherit.poa</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="inherit_id" ref="base.view_partner_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
                 <page string="POA Authorities" name="poa_permissions">
@@ -12,14 +12,16 @@
                             name="action_open_poa_download_wizard"
                             type="object"
                             string="Download POA"
-                            class="btn-primary"
+                            class="btn-primary p-2 mt-3 mb-2 mx-3"
                         />
-                        <field name="poa_permission_ids" widget="many2many_checkboxes" options="{'no_create_edit': False, 'no_create': False}"/>
+
+                        <separator colspan="2" class="border-top w-75" />
+
+                        <field name="poa_permission_ids" widget="many2many_checkboxes"
+                            options="{'no_create_edit': False, 'no_create': False}" />
                     </group>
                 </page>
             </xpath>
         </field>
     </record>
 </odoo>
-
-

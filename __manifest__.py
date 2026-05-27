@@ -1,5 +1,5 @@
 {
-    'name': 'Legal Practice Management - Power of Attorney',
+    'name': 'Legal Practice Management - POA',
     'version': '1.0.0',
     'summary': 'Manage reusable power of attorney authorities on client records.',
     'description': 'Adds reusable POA authorities, lets staff assign them to clients, and provides direct one-time POA document downloads from the client form.',

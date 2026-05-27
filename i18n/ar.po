@@ -100,7 +100,7 @@ msgstr "اسم العرض"
 #: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_legal_poa_download_wizard_form
 #: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
 msgid "Download POA"
-msgstr "تنزيل التوكيل"
+msgstr "إنشاء وتنزيل التوكيل"
 
 #. module: legal_practice_management_poa
 #: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__id
@@ -140,7 +140,7 @@ msgstr "جهة الاتصال"
 #: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
 #: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
 msgid "POA Authorities"
-msgstr "صلاحيات التوكيل"
+msgstr "التوكيل وصلاحياته"
 
 #. module: legal_practice_management_poa
 #: model:ir.model,name:legal_practice_management_poa.model_poa_permission
