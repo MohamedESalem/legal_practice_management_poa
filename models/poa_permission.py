@@ -5,36 +5,34 @@ from odoo.exceptions import ValidationError
 
 class PoaPermission(models.Model):
     _name = 'poa.permission'
-    _description = 'POA Permission'
+    _description = 'POA Authority'
     _order = 'name_en, id'
     _rec_name = 'name_en'
 
-    # Short bilingual names (new fields)
-    name_en = fields.Char(string=_('Permission Name (EN)'), required=False, translate=False)
-    name_ar = fields.Char(string=_('Permission Name (AR)'), required=False, translate=False)
+    name_en = fields.Char(string='Authority Name (English)', required=False, translate=False)
+    name_ar = fields.Char(string='Authority Name (Arabic)', required=False, translate=False)
 
-    # Long bilingual descriptions (renamed from former name fields)
-    description_en = fields.Char(string=_('Permission Description (EN)'), required=True, translate=False, oldname='name_en')
-    description_ar = fields.Char(string=_('Permission Description (AR)'), required=True, translate=False, oldname='name_ar')
+    description_en = fields.Char(string='Authority Description (English)', required=True, translate=False, oldname='name_en')
+    description_ar = fields.Char(string='Authority Description (Arabic)', required=True, translate=False, oldname='name_ar')
 
     partner_ids = fields.Many2many(
         comodel_name='res.partner',
         relation='poa_permission_res_partner_rel',
         column1='permission_id',
         column2='partner_id',
-        string=_('Clients'),
+        string='Clients',
     )
 
     _sql_constraints = [
-        ('name_en_unique', 'unique(name_en)', 'English permission name must be unique.'),
-        ('name_ar_unique', 'unique(name_ar)', 'Arabic permission name must be unique.'),
+        ('name_en_unique', 'unique(name_en)', 'The English authority name must be unique.'),
+        ('name_ar_unique', 'unique(name_ar)', 'The Arabic authority name must be unique.'),
     ]
 
     @api.constrains('description_en', 'description_ar')
     def _check_descriptions_not_empty(self):
         for rec in self:
             if not rec.description_en or not rec.description_ar:
-                raise ValidationError(_('Both English and Arabic permission descriptions are required.'))
+                raise ValidationError(_('Both English and Arabic authority descriptions are required.'))
 
 
     def name_get(self):
@@ -75,4 +73,3 @@ class PoaPermission(models.Model):
                 record.display_name = name_ar or name_en or str(record.id)
             else:
                 record.display_name = name_en or name_ar or str(record.id)
-

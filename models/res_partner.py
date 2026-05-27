@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields, _
+from odoo import models, fields
 
 
 class ResPartner(models.Model):
@@ -9,15 +9,15 @@ class ResPartner(models.Model):
         comodel_name='res.partner',
         string='Client',
         compute='_compute_poa_report_partner_id',
-        help='Compatibility alias for POA DOCX templates rendered directly from a client.',
+        help='Internal compatibility alias for POA DOCX templates rendered directly from a client.',
     )
     poa_permission_ids = fields.Many2many(
         comodel_name='poa.permission',
         relation='poa_permission_res_partner_rel',
         column1='partner_id',
         column2='permission_id',
-        string=_('POA Permissions / Authorities'),
-        help=_('Select the authorities this client is authorized for.'),
+        string='POA Authorities',
+        help='Select the power of attorney authorities granted to this client.',
     )
 
     def _compute_poa_report_partner_id(self):

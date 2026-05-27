@@ -1,8 +1,8 @@
 {
-    'name': 'Legal Practice Management - POA',
+    'name': 'Legal Practice Management - Power of Attorney',
     'version': '1.0.0',
-    'summary': 'Power of Attorney permissions/authorities management on partners (clients).',
-    'description': 'Adds global, reusable POA permissions and allows assigning them to partners via a dedicated tab with checkboxes.',
+    'summary': 'Manage reusable power of attorney authorities on client records.',
+    'description': 'Adds reusable POA authorities, lets staff assign them to clients, and provides direct one-time POA document downloads from the client form.',
     'author': 'Mohamed Essam',
     'website': 'https://essamsalem.com',
     'category': 'Contacts',

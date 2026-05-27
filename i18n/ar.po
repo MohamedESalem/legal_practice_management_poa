@@ -1,9 +1,13 @@
 # Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* legal_practice_management_poa
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo\n"
-"POT-Creation-Date: 2025-08-28 00:00+0000\n"
-"PO-Revision-Date: 2025-08-28 00:00+0000\n"
+"Project-Id-Version: Odoo Server 18.0-20250819\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-27 15:25+0000\n"
+"PO-Revision-Date: 2026-05-27 15:25+0000\n"
 "Last-Translator: Mohamed Essam <info@essamsalem.com>\n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -13,39 +17,55 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #. module: legal_practice_management_poa
-#: model:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
-msgid "POA Permissions"
-msgstr "صلاحيات التوكيل"
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "Authority Description"
+msgstr "وصف الصلاحية"
 
 #. module: legal_practice_management_poa
-#: model:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
-msgid "POA Permission"
-msgstr "صلاحية توكيل"
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__description_ar
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "Authority Description (Arabic)"
+msgstr "وصف الصلاحية (بالعربية)"
 
 #. module: legal_practice_management_poa
-#: model:ir.actions.act_window,name:legal_practice_management_poa.action_poa_permission
-msgid "POA Permissions"
-msgstr "صلاحيات التوكيل"
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__description_en
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "Authority Description (English)"
+msgstr "وصف الصلاحية (بالإنجليزية)"
 
 #. module: legal_practice_management_poa
-#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_root
-msgid "POA"
-msgstr "التوكيل"
-
-#. module: legal_practice_management_poa
-#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_permissions
-msgid "POA Permissions"
-msgstr "صلاحيات التوكيل"
-
-#. module: legal_practice_management_poa
-#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__name_en
-msgid "Permission (EN)"
-msgstr "الصلاحية (إنجليزي)"
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "Authority Name"
+msgstr "اسم الصلاحية"
 
 #. module: legal_practice_management_poa
 #: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__name_ar
-msgid "Permission (AR)"
-msgstr "الصلاحية (عربي)"
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "Authority Name (Arabic)"
+msgstr "اسم الصلاحية (بالعربية)"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__name_en
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "Authority Name (English)"
+msgstr "اسم الصلاحية (بالإنجليزية)"
+
+#. module: legal_practice_management_poa
+#. odoo-python
+#: code:addons/legal_practice_management_poa/models/poa_permission.py:0
+msgid "Both English and Arabic authority descriptions are required."
+msgstr "وصف الصلاحية باللغتين الإنجليزية والعربية مطلوب."
+
+#. module: legal_practice_management_poa
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_legal_poa_download_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__partner_id
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_res_partner__partner_id
+msgid "Client"
+msgstr "العميل"
 
 #. module: legal_practice_management_poa
 #: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__partner_ids
@@ -53,18 +73,124 @@ msgid "Clients"
 msgstr "العملاء"
 
 #. module: legal_practice_management_poa
+#: model_terms:ir.actions.act_window,help:legal_practice_management_poa.action_poa_permission
+msgid "Create and manage reusable POA authorities in English and Arabic."
+msgstr "أنشئ وأدر صلاحيات توكيل قابلة لإعادة الاستخدام باللغتين الإنجليزية والعربية."
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__create_uid
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__create_date
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__display_name
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: legal_practice_management_poa
+#: model:ir.actions.act_window,name:legal_practice_management_poa.action_legal_poa_download_wizard
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_legal_poa_download_wizard_form
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
+msgid "Download POA"
+msgstr "تنزيل التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__id
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,help:legal_practice_management_poa.field_res_partner__partner_id
+msgid ""
+"Internal compatibility alias for POA DOCX templates rendered directly from a"
+" client."
+msgstr "حقل توافق داخلي لقوالب DOCX الخاصة بالتوكيلات عند إنشائها مباشرة من سجل العميل."
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__write_uid
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__write_date
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_poa_permission__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: legal_practice_management_poa
+#: model:ir.model,name:legal_practice_management_poa.model_res_partner
+msgid "Legal Case Partner"
+msgstr "جهة الاتصال"
+
+#. module: legal_practice_management_poa
+#: model:ir.actions.act_window,name:legal_practice_management_poa.action_poa_permission
 #: model:ir.model.fields,field_description:legal_practice_management_poa.field_res_partner__poa_permission_ids
-msgid "POA Permissions / Authorities"
-msgstr "صلاحيات / سلطات التوكيل"
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_res_users__poa_permission_ids
+#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_permissions
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_tree
+msgid "POA Authorities"
+msgstr "صلاحيات التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model,name:legal_practice_management_poa.model_poa_permission
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "POA Authority"
+msgstr "صلاحية توكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model,name:legal_practice_management_poa.model_legal_poa_download_wizard
+msgid "POA Download Wizard"
+msgstr "معالج تنزيل التوكيل"
+
+#. module: legal_practice_management_poa
+#: model:ir.model.fields,field_description:legal_practice_management_poa.field_legal_poa_download_wizard__poa_template_id
+msgid "POA Template"
+msgstr "قالب التوكيل"
+
+#. module: legal_practice_management_poa
+#. odoo-python
+#: code:addons/legal_practice_management_poa/wizards/poa_download_wizard.py:0
+msgid "Please select a published POA template configured for clients."
+msgstr "يرجى اختيار قالب توكيل منشور ومعد للاستخدام مع العملاء."
+
+#. module: legal_practice_management_poa
+#: model:ir.ui.menu,name:legal_practice_management_poa.menu_poa_root
+msgid "Power of Attorney"
+msgstr "التوكيلات"
 
 #. module: legal_practice_management_poa
 #: model:ir.model.fields,help:legal_practice_management_poa.field_res_partner__poa_permission_ids
-msgid "Select the authorities this client is authorized for."
-msgstr "حدد السلطات المخول بها هذا العميل."
+#: model:ir.model.fields,help:legal_practice_management_poa.field_res_users__poa_permission_ids
+msgid "Select the power of attorney authorities granted to this client."
+msgstr "حدد صلاحيات التوكيل الممنوحة لهذا العميل."
 
 #. module: legal_practice_management_poa
-#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_partner_form_inherit_poa
-msgid "POA Permissions / Authorities"
-msgstr "صلاحيات / سلطات التوكيل"
+#: model:ir.model.constraint,message:legal_practice_management_poa.constraint_poa_permission_name_ar_unique
+msgid "The Arabic authority name must be unique."
+msgstr "يجب ألا يتكرر اسم الصلاحية باللغة العربية."
 
+#. module: legal_practice_management_poa
+#: model:ir.model.constraint,message:legal_practice_management_poa.constraint_poa_permission_name_en_unique
+msgid "The English authority name must be unique."
+msgstr "يجب ألا يتكرر اسم الصلاحية باللغة الإنجليزية."
 
+#. module: legal_practice_management_poa
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "e.g., Representation before courts"
+msgstr "مثلاً: التمثيل أمام المحاكم"
+
+#. module: legal_practice_management_poa
+#: model_terms:ir.ui.view,arch_db:legal_practice_management_poa.view_poa_permission_form
+msgid "مثلاً: التمثيل أمام المحاكم"
+msgstr "مثلاً: التمثيل أمام المحاكم"
